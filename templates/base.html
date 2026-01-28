@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Library</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div style="display:flex; justify-content:space-between; align-items:center;">
+    <h3>Library Management System</h3>
+
+    {% if request.path not in ['/login', '/register'] %}
+        <a href="/logout" style="color:red; font-weight:bold;">Logout</a>
+    {% endif %}
+</div>
+
+<hr>
+
+{% with messages = get_flashed_messages() %}
+  {% for msg in messages %}
+    <p>{{ msg }}</p>
+  {% endfor %}
+{% endwith %}
+
+{% block content %}{% endblock %}
+
+</body>
+</html>

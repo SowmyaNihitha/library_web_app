@@ -1,6 +1,6 @@
-# 📚 Library Management Web Application
+#  Library Management Web Application
 
-## 🔍 Overview
+##  Overview
 
 This is a **server-rendered Library Management System** built using **Flask**, **JWT-based authentication**, and **SQLite3**. The application supports **role-based access control** with two roles:
 
@@ -11,7 +11,7 @@ This is a **server-rendered Library Management System** built using **Flask**, *
 
 ---
 
-## 🛠 Technology Stack
+##  Technology Stack
 
 * Python 
 * Flask
@@ -22,16 +22,16 @@ This is a **server-rendered Library Management System** built using **Flask**, *
 
 ---
 
-## 👥 User Roles & Permissions
+##  User Roles & Permissions
 
-### 🔑 Admin
+###  Admin
 
 * Login to admin dashboard
 * Add new books
 * View all books (available & issued)
 * View borrowed history
 
-### 👤 Member
+###  Member
 
 * Login to member dashboard
 * View available books
@@ -42,7 +42,7 @@ This is a **server-rendered Library Management System** built using **Flask**, *
 
 ---
 
-## 🔐 Authentication & Authorization
+##  Authentication & Authorization
 
 * Users login using **username & password**
 * Passwords are **hashed using Werkzeug security**
@@ -58,7 +58,7 @@ This is a **server-rendered Library Management System** built using **Flask**, *
 
 ---
 
-## 🗄 Database Schema
+##  Database Schema
 
 ### users
 
@@ -89,7 +89,7 @@ This is a **server-rendered Library Management System** built using **Flask**, *
 
 ---
 
-## 📄 Application Pages
+##  Application Pages
 
 ### Public Pages
 
@@ -111,7 +111,7 @@ This is a **server-rendered Library Management System** built using **Flask**, *
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 library-web-app/
@@ -138,22 +138,22 @@ library-web-app/
 
 ---
 
-## ⚙️ Setup Instructions
+##  Setup Instructions
 
-### 1️⃣ Create Virtual Environment
+###  Create Virtual Environment
 
 ```bash
 python -m venv venv
 source venv/bin/activate   # Windows: venv\Scripts\activate
 ```
 
-### 2️⃣ Install Dependencies
+### Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 3️⃣ Run the Application
+###  Run the Application
 
 ```bash
 python app.py
@@ -167,7 +167,7 @@ http://127.0.0.1:5000/login
 
 ---
 
-## 🧪 Default Admin Credentials
+##  Default Admin Credentials
 
 You can create an admin user manually from the database or modify the registration logic.
 
